@@ -1,0 +1,33 @@
+.carousel  /*slider */
+{
+	position: relative;
+}
+.carousel .carousel-indicators	/* indicator wrapper*/
+{
+	position: absolute;
+	bottom: 0;
+	left:0px;
+	width: 100%;
+  	margin: 0;
+  	left: 0;
+ 	right: 0;
+ 	width: 100%;
+ 	display: flex;	/* this is for indicators  */
+}
+#headcarousel_container .carousel-indicators li /* indicators*/
+{
+	flex-grow: 1;  /* make all indicator li similarly stretched */
+	height: 40px;
+	border-radius: 2px;
+}
+
+#headcarousel_container .carousel-indicators li.active
+{
+	background-color:rgba(251,222,87,0.5) ;/* changes indicators color when it is active*/
+}
+.carousel .carousel-inner .item img
+{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}

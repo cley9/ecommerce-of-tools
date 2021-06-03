@@ -1,0 +1,24 @@
+{
+    "name": "kawschool/tienda-online", //el nombre del proyecto  o indice
+    "description": "creacion de una tienda online",// la descripcion del proyecto
+    "type": "project",-// el typo que es proyecto
+    "license": "MIT",// licencia
+    "authors": [
+        {
+            "name": "hugo trigoso paredes",//se pone los datos del grupo de procto
+            "email": "htrigoso@kawschool.com"
+        },
+        {
+            "name": "elvis pinares galvan",
+            "email": "epinares@kawschool.com"
+        }
+    ],
+    "require": {//para agregar libreria si lo necesita el proyecto
+
+    },
+    "autoload": {
+        "psr-4": {//invocar de forma generica
+            "Kawschool\\":"src/" //nombre
+        }
+    }
+}

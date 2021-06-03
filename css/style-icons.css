@@ -1,0 +1,24 @@
+
+.icons-font-colo{
+ height:600px;
+ width: 700px;
+}
+
+.icons-font-colo:hover{
+  color:#FDFDFD;
+
+}
+
+.icons-view-color{
+  color:#828C8A;
+  font-size:40px;
+}
+
+
+/* ---------------------sytle login */
+.icons-font-login{
+  font-size: 130px;
+}
+.icons--font--color--login{
+  /* background-color: ;:orange; */
+}

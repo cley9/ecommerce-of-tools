@@ -1,0 +1,34 @@
+body{
+	font-family: arial, helvetica;
+	background: #e8e8e8;
+}
+.btn_ico{
+background:#EE7358;
+}
+
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 100%;
+	max-width: 10000px;
+	margin: auto;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+    padding: 20px;
+    font-size:20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}

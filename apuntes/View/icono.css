@@ -1,0 +1,33 @@
+.input-icono {
+  background-image: url('icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 58px;
+  /*  icons/search.svg
+  width: 300px;
+  height: 60px;
+  border: 1px solid rgba(9, 113, 163, 1);
+  border-radius: 3px;*/
+}/*
+.input-icono input {
+  width: 100%;s
+  font-size: 0.9em;
+  border: none;
+}
+.input-icono input:focus nt ctn a aaljkdsafjafdjdfkljaldfjasf cuenta s
+  outline: none;
+}*/
+/* icono 2 */
+.input-icono1{
+  background-image: url('icons/searach.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 58px;
+
+}
