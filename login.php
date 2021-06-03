@@ -45,7 +45,7 @@ include("includes/head_.php")
 	</div>
 </div>
 </div>
-<script src="js/mostrarPass.js" charset="utf-8"></script>
+<script src="js/viewPassword.js" charset="utf-8"></script>
 
 <?php
 include("includes/footer_.php")

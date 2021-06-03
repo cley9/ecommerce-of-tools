@@ -52,10 +52,21 @@ include("model/cn.php");
 //session_start();
 if(isset($_GET['delete_id'])){	// Selecciona imagen a borrar
 //	if(isset($_POST['delete_id'])){	// Selecciona imagen a borrar
-
+/*
 	$stmt_select = $DB_con->prepare('SELECT db_imagen FROM tbl_producto WHERE db_id =:uid');
 	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
 	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+*/
+
+
+// ------------
+
+$stmt_select = $DB_con->prepare('DELETE FROM tbl_producto WHERE db_id =:uid');
+$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
+$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+
+
+
 	 ?> 	<script type="text/javascript">
 	 // alert('quierare');
 	 </script> <?php

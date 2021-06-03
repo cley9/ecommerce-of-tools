@@ -9,7 +9,7 @@
 <body>
 
 
-  <?php include("includes/head_.php"); ?>
+  <?php include("../includes/head_.php"); ?>
 
    <div class="container">
    <div class="row">
