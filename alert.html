@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+           <script src='https://code.jquery.com/jquery-3.5.1.js' ></script>
+           <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
+dfdf
+   <a href="#" id="btn2">evento 1</a>
+   <a href="#" onclick="return validar()">delete</a>
+<script type="text/javascript">
+
+  // Swal.fire(
+  //   {
+  //
+  //   title:'mensaje',
+  //   text:'texto de prueva',
+  //   position:'center',
+  //   icon:'success',
+  //   timer:1000
+  // }
+  // );
+
+  // $("#btn2").click(function(){
+  //   //alert("click con js");
+  //   //Swal.fire("ejemplo de alert2");
+  //   Swal.fire({
+  //     type:'warning ',
+  //     title:'mensaje',
+  //     text:'texto de prueva'
+  //   });
+  // });
+
+  function validar(){
+
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+
+      swalWithBootstrapButtons.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'No, cancel!',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+
+          )
+          return true;
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'Cancelled',
+            'Your imaginary file is safe :)',
+            'error'
+          )
+          return false;
+        }
+      })
+
+  }
+
+
+
+
+
+ $("#btn2").click(function(){
+
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+
+  swalWithBootstrapButtons.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: 'No, cancel!',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+
+      )
+      return true;
+    } else if (
+      /* Read more about handling dismissals below */
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      swalWithBootstrapButtons.fire(
+        'Cancelled',
+        'Your imaginary file is safe :)',
+        'error'
+      )
+    }
+  })
+});
+</script>
+
+  </body>
+</html>

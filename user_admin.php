@@ -40,7 +40,7 @@ require_once('includes/head_.php');
       </div>
       <div class="col-3 text-end">
         <a href="ImpFactura/impFactura.php" class="btn btn-secondary " target="_blank">Generar Factura</a>
-      </div>
+        </div>
     </div>
   </div>
 <hr>
@@ -58,6 +58,17 @@ table.table-hover tbody tr:hover {
     <?php
 	//if($stmt->rowCount() > 0){
 		?>
+    <script type="text/javascript">
+    function validar(){
+      var respuesta=confirm("Estas seguro de deseos elimimar al usuario ")
+    if (respuesta == true) {
+      return true;
+    } else {
+        return false;
+    }
+
+    }
+    </script>
 		<div class="col-md-12">
   			<table class="table table-bordered text-center table-hover">
 		<thead class="table-primary">
@@ -84,24 +95,42 @@ table.table-hover tbody tr:hover {
                 <td>
                   <a href="editar.php?edit_id=<?php echo $row['db_id']; ?>"  class="btn btn-warning"> <i class="bi bi-pencil"></i></a>
 
-                  <a href="crud.php?delete_id=<?php echo $row['db_id']; ?>" class="btn btn-danger"> <i class="bi bi-trash"></i></a>
-
-
+<a   onclick="confirmar('<?php echo $row['db_id']; $row['db_imagen']; ?>')" class="btn btn-danger"> <i class="bi bi-trash"></i></a>
 
                 </td>
           </tr>
+
       <?php	}	?>
 
 </table>
-	<?php// }else{}?>
 
   </div>
 </div>
 </div>
-<div class="" style="margin-top:140px;">
+<script type="text/javascript">
+function confirmar(dato , ima) {
+Swal.fire({
+    title: '¿Estas seguro de eliminar ?'+ima+".jpg",
+    // icon: 'warning',
+    // background: 'url(/img/user1.png)',
+    // imageUrl: 'https://unsplash.it/400/200',
+    // imageUrl: 'img/mapa.gif',
+    // imageUrl: 'imagenes/<?php //echo $row['db_imagen']; ?>',
+    imageUrl: 'imagenes/'+ima+'.jpg',
 
-</div>
+    imageWidth: '90px',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#6c757d',
+    confirmButtonText: 'Confirmar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+       window.location.href ="crud.php?delete_id="+dato;
 
+    }
+});
+};
+</script>
 <?php
 include("includes/footer_.php");
 ?>

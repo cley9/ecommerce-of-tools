@@ -1,9 +1,9 @@
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-   <div class="" style="margin-top:40px">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"> -->
+   <!-- <div class="" style="margin-top:40px">
 
-   </div>
-
+   </div> -->
+<!--
 <footer class="pt-4 border-top bg-dark text-white ">
   <div class="container">
     <div class="row ">
@@ -54,9 +54,70 @@
     </div>
   </div>
   </div>
-</footer>
+</footer> -->
+<footer class="pt-4 foot  " style="background-color:#2D2E2B; ">
+     <div class="container text-muted">
+       <div class="row ">
+         <div class="col-4 col-md  ">
+           <a class="navbar-brand" href="#"><img src="img/icons-sistema-venta.png" class="img-fluid " width="130px" height="80px" alt=""></a>
+   <small class="d-block mb-3 text-muted ">Heramenta S.A.C</small>
+         </div>
+         <div class="col-4 col-md  ">
+           <h5 class="text-light">Contáctanos</h5>
+          <ul class="list-unstyled text-small">
+              <li><a class="text-muted  " href="#">Contáctanos</a></li>
+              <li><a class="text-muted" href="#">Ubícanos</a></li>
+          </ul>
+
+         </div>
+         <div class="col-4 col-md ">
+           <h5 class="text-light">Nosotros</h5>
+           <ul class="list-unstyled text-small">
+               <li><a class="text-muted" href="#">Nosotros</a></li>
+               <li><a class="text-muted" href="#">Equipo</a></li>
+           </ul>
+         </div>
+         <div class="col-12 text-center col-md mb-2 ">
+           <h5 class="text-light">Tools </h5>
 
 
+
+ <div class="row  d-flex justify-content-center">
+
+            <div class="col-2 col-md-3 ">
+
+              <a class="icons-view-color"  href="#"><i class="bi bi-screwdriver icons-font-colo"></i></a>
+            </div>
+            <div class="col-2 col-md-3">
+
+              <a class="icons-view-color" href="#" ><i class="bi bi-wrench  icons-font-colo"></i></a>
+            </div>
+            <div class="col-2 col-md-3">
+
+              <a class="icons-view-color" href="#"  ><i class="bi bi-tools  icons-font-colo"></i></a>
+            </div>
+
+            <div class="col-2 col-md-3 ">
+              <a class="icons-view-color" href="#" ><i class="bi bi-hammer  icons-font-colo"></i></a>
+
+            </div>
+         </div>
+
+
+
+
+         </div>
+         <hr class=" d-block d-sm-block d-md-none">
+         <div class="row-fluid ">
+           <div class="text-center ">
+             <small class="d-block mb-3 text-muted h6"> ©2021 copyright Agrupec </small>
+           </div>
+         </div>
+
+       </div>
+   </footer>
+
+<!-- ------------------ -->
 <script src='https://code.jquery.com/jquery-3.5.1.js' ></script>
 <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
 </body>

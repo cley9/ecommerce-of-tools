@@ -7,8 +7,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/logo_ferreteria.svg" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="css/mystyle.css">
+-----------sweetalert2
 
+   <script src='https://code.jquery.com/jquery-3.5.1.js' ></script>
+   <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
 
     <title>AgrupecVentas</title>
   </head>
