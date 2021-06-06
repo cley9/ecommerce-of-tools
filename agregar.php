@@ -42,7 +42,7 @@ if (!isset($_SESSION['nombre'])) {
 
                 <div class="modal-footer">
 
-                  <input type="submit" class="btn btn-primary" name="btnsave" id="btn_alert__save_" value="Guardar">
+                  <input type="submit" class="btn btn-primary"  onclick="msgAgregado()" name="btnsave" id="btn_alert__save_" value="Guardar">
                   <button type="reset" class="btn btn-warning">Borrar</button>
                   <a href="user_admin.php" class="btn btn-success" >Salir</a>
                 </div>

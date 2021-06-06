@@ -18,7 +18,6 @@ include("crud.php");
 						<div class="mb-3">
 							<label for="message-text" class="col-form-label">Precio del Producto:</label>
 							<input type="text" name="producto_pre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<?php echo $db_precio; ?>" required />
-							<!--<textarea class="form-control" id="message-text"></textarea>-->
 						</div>
 
 						<div class="mb-3 text-center">
@@ -28,9 +27,6 @@ include("crud.php");
 										<label for="message-text" class="col-form-label">Foto del Producto</label>
 										<input type="file" class="form-control" id="archvio" aria-describedby="fileHelp" name="producto_image"  accept="image/*" />
 									</div>
-
-
-									<!--<input type="hidden" name="oculto" value="">-->
 
 									<div class="modal-footer">
 
@@ -45,17 +41,10 @@ include("crud.php");
 
 			</div>
 		</div>
-<script type="text/javascript">
-$('#btn_alert__save').click(function (){
-			Swal.fire({
-				title:'mensaje',
-				text:'Producto eliminado',
-				position:'center',
-				icon:'error',
-			//	timer:6000
-			});
-	});
 
-</script>
 
-		<script src="alert.js"></script>
+
+
+		<?php
+		include("includes/footer_.php");
+		?>

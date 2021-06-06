@@ -170,15 +170,17 @@ if (isset($_POST['user_login_'])) {
 		 if ($contador > 0) {
 		echo "el usuario existe";
 
-			$response['status']  = 'success';
-			$response['message'] = 'Producto eliminado correctamente...';
+			// $response['status']  = 'success';
+			$response['message'] = 'bien venido ...';
 
 		 header('Location: user_admin.php');
 		}
 		else {
-		 echo "el usuario no existe";
-		 $_SESSION['message']='Usuario no valido';
-		 $_SESSION['mensaje_type']='danger';
+		 // echo "el usuario no existe";
+		 // $_SESSION['message']='Usuario no valido';
+		 $_SESSION['message']='Contraseña invalida';
+
+		 // $_SESSION['mensaje_type']='danger';
 		}
 	//cierro la conexion
 	//$conexion = null;

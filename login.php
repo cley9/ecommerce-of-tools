@@ -3,18 +3,23 @@
 	if (isset($_SESSION['nombre'])) {
 		header('Location: user_admin.php');
 	}
-include("includes/head_.php")
-?>
-<link rel="stylesheet" href="icono.css">
+include("includes/head_.php");
+ if (isset($_SESSION['message'])) {?>
+<script type="text/javascript">
+Swal.fire({
+  icon: 'error',
+  title: '<?= $_SESSION['message']; ?>',
+  text: 'Vuelva a interntarlo!',
+	showConfirmButton: false,
+	timer: 3000
 
-<br>
-<?php if (isset($_SESSION['message'])) {?>
-	<div class="alert alert-<?= $_SESSION['mensaje_type'];  ?> alert-dismissible fade show text-center" role="alert">
-<h4> <?= $_SESSION['message']; ?></h4>
-<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+})
+
+</script>
+
+
 <?php session_unset(); } ?>
-			<div class="container mb-4">
+			<div class="container mb-4 pt-4">
 						<div class="">
 							<div class="  container  border  col-lg-4 shadow-lg text-center rounded-3">
 								<div class="mb-2"></div>

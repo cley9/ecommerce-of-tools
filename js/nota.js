@@ -1,3 +1,47 @@
+// --------------------------------------------validadion  con alert y onclick
+<script type="text/javascript">
+function validar(){
+  var respuesta=confirm("Estas seguro de deseos elimimar al usuario ")
+if (respuesta == true) {
+  return true;
+} else {
+    return false;
+}
+
+}
+</script>
+
+
+// --------------------------------------------validadion  con alert y onclick
+
+
+<a href="#" onclick="gaa('cley','carlos')">djkfak</a>
+
+
+<script type="text/javascript">
+  function gaa(sa1, sa2){
+    return gaa(sa1 + ' , ' + sa2);
+  }
+</script>
+
+// -------------------------------------------- timer
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+// -------------------------------------------- timer
+
+
+
+
+
 
   <a href="#" onclick="return validar()" class="btn btn-danger">dfdf <i class="bi bi-trash"></i></a>
 
@@ -5,15 +49,15 @@
 
 
                     <script type="text/javascript">
-                    // function validar(){
-                    //   var respuesta=confirm("Estas seguro de deseos elimimar al usuario ")
-                    // if (respuesta == true) {
-                    //   return true;
-                    // } else {
-                    //     return false;
-                    // }
-                    //
-                    // }
+                    function validar(){
+                      var respuesta=confirm("Estas seguro de deseos elimimar al usuario ")
+                    if (respuesta == true) {
+                      return true;
+                    } else {
+                        return false;
+                    }
+
+                    }
 
 
 $("#cmd").click(function(){

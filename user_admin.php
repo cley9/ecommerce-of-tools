@@ -9,32 +9,76 @@ elseif(isset($_SESSION['nombre'])){
 require_once('includes/head_.php');
 
 }else{echo "Error en el sistema";}
-?>
 
+
+if (isset($_SESSION['message'])) {?>
+<script type="text/javascript">
+Swal.fire({
+ icon: 'error',
+ title: '<?= $_SESSION['message']; ?>',
+ //title:'Bienvenido <?php //echo $_SESSION['nombre'] ; ?>',
+ // title:'Bienvenido <?php// echo $_GET['response.message']; ?>',
+
+
+ text: 'Vuelva a interntarlo!',
+ showConfirmButton: false,
+ timer: 3000
+
+})
+
+</script>
+
+
+<?php session_unset(); } ?>
+
+<!-- --------------------------------------------------------------------------------------------------° -->
   <div class="container">
     <div class="row">
-
-
+      <h2><?php echo $_SESSION['nombre'] ; ?></h2>
       <script type="text/javascript">
-    //    alert('fjadjf');
-    Swal.fire(
-      {
-        title:'Bienvenido <?php echo $_GET['response.message']; ?>',
-      //title:'Bienvenido <?php //echo $_SESSION['nombre'] ; ?>',
-      //title:'mensaje',
-      position:'center',
-      icon:'success',
-      timer:1000
-    }
-  );
-  //return false;
-    	//swal('Eliminado!', response.message, response.status);
+      var factory=  "<?php echo $_SESSION['nombre'] ; ?>";
+      Swal.fire({
+       icon: 'success',
+       // title: '<? //echo $_SESSION['nombre']; ?>',
+       title:  ' Bienvenido '+factory,
+
+       //title:'Bienvenido <?php //echo $_SESSION['nombre'] ; ?>',
+       // title:'Bienvenido <?php// echo $_GET['response.message']; ?>',
+
+
+       text: 'Ahora puedes gestionar los datos !',
+       showConfirmButton: false,
+       timer: 3000
+
+      })
 
       </script>
-      <h1 class="text-center ">Bienvenido <?php echo $_SESSION['nombre'] ; ?></h1>
+
+      <h1 class="text-center ">Bienvenido <?php// echo $_SESSION['nombre'] ; ?></h1>
       <div class="col-3">
-        <a href="crud.php?exit" class="btn btn-primary">Cerrar Sesión <i class="bi bi-power text-blued" width="5rem" height="2rem"></i></a>
+        <a  onclick="end('<?php echo $_SESSION['nombre'] ; ?>')" class="btn btn-primary">Cerrar Sesión <i class="bi bi-power text-blued" width="5rem" height="2rem"></i></a>
       </div>
+      <script type="text/javascript">
+      // --------------------------------------------------------------------------------------msg-cerrar-sesion
+
+      function end(user) {
+      Swal.fire({
+          title: '¿ Estas seguro de cerrar sesión '+user+' ?',
+          icon: 'info',
+          showCancelButton: true,
+          confirmButtonColor: '#48C9B0',
+          cancelButtonColor: '#EC7063',
+          confirmButtonText: 'Confirmar'
+        }).then((msg_exit) => {
+          if (msg_exit.isConfirmed) {
+             window.location.href ="crud.php?exit";
+
+          }
+      });
+      }
+
+
+      </script>
       <div class="col-6">
         <?php include('agregar.php');?>
       </div>
@@ -58,17 +102,7 @@ table.table-hover tbody tr:hover {
     <?php
 	//if($stmt->rowCount() > 0){
 		?>
-    <script type="text/javascript">
-    function validar(){
-      var respuesta=confirm("Estas seguro de deseos elimimar al usuario ")
-    if (respuesta == true) {
-      return true;
-    } else {
-        return false;
-    }
 
-    }
-    </script>
 		<div class="col-md-12">
   			<table class="table table-bordered text-center table-hover">
 		<thead class="table-primary">
@@ -130,7 +164,15 @@ Swal.fire({
     }
 });
 };
+
+
 </script>
+
+
+
+
+<!-- <script src="js/funcion-msg.js" charset="utf-8"></script> -->
+
 <?php
 include("includes/footer_.php");
 ?>

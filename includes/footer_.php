@@ -118,6 +118,7 @@
    </footer>
 
 <!-- ------------------ -->
+<script src="js/funcion-msg.js" charset="utf-8"></script>
 <script src='https://code.jquery.com/jquery-3.5.1.js' ></script>
 <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
 </body>
