@@ -65,16 +65,16 @@
          <div class="col-4 col-md  ">
            <h5 class="text-light">Contáctanos</h5>
           <ul class="list-unstyled text-small">
-              <li><a class="text-muted  " href="#">Contáctanos</a></li>
-              <li><a class="text-muted" href="#">Ubícanos</a></li>
+              <li><a href="producto.php"  class="text-muted  " href="#">Contáctanos</a></li>
+              <li><a href="producto.php"  class="text-muted" href="#">Ubícanos</a></li>
           </ul>
 
          </div>
          <div class="col-4 col-md ">
            <h5 class="text-light">Nosotros</h5>
            <ul class="list-unstyled text-small">
-               <li><a class="text-muted" href="#">Nosotros</a></li>
-               <li><a class="text-muted" href="#">Equipo</a></li>
+               <li><a href="producto.php"  class="text-muted" href="#">Nosotros</a></li>
+               <li><a href="producto.php" class="text-muted" href="#">Equipo</a></li>
            </ul>
          </div>
          <div class="col-12 text-center col-md mb-2 ">

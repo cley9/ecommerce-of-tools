@@ -36,7 +36,7 @@
       <ul class="navbar-nav  mb-2 mb-lg-0"><!---->
 
         <li class="nav-item">
-          <a href="index.php" class="nav-link active" aria-current="page"><img src="icons/house-door-fill.svg" alt=""height="22px">Inicio</a>
+          <a href="index.php" class="nav-link active" aria-current="page"><img src="img/icons/house-door-fill.svg" alt=""height="22px">Inicio</a>
           <!--
           <a href="index.php" class="nav-link active"  aria-current="page"><a class=""href="#" style=" color:#828C8A; font-size:40px;"  ><i class="bi bi-wrench c"></i>
             Inicio</a>
@@ -55,14 +55,14 @@
         </li>
         <li class="nav-item">
         <!--<router-link to="/portfolio" class="nav-link">Portfolio</router-link>-->
-        <a href="producto.php" class="nav-link active" aria-current="page"><img src="icons/cart-plus-fill.svg" alt=""height="22px">Producto</a>
+        <a href="producto.php" class="nav-link active" aria-current="page"><img src="img/icons/cart-plus-fill.svg" alt=""height="22px">Producto</a>
         </li>
          <li class="nav-item ">
            <!--<router-link to="/contacto" class="nav-link">Contacto</router-link>-->
-           <a href="Nosotros.php" class="nav-link active" aria-current="page"><img src="icons/plug-fill.svg" alt=""height="22px">Nosotros</a>
+           <a href="Nosotros.php" class="nav-link active" aria-current="page"><img src="img/icons/plug-fill.svg" alt=""height="22px">Nosotros</a>
          </li>
         <li class="nav-item">
-          <a href="login.php" class="nav-link active" aria-current="page"><img src="icons/person-fill.svg" alt=""height="22px">Iniciar sesion</a>
+          <a href="login.php" class="nav-link active" aria-current="page"><img src="img/icons/person-fill.svg" alt=""height="22px">Iniciar sesion</a>
       </li>
 
 

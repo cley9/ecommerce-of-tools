@@ -6,7 +6,6 @@ include('pushBusqueda.php');
 ?>
 
 
-
 <nav class="navbar bg-light  d-block d-sm-block d-md-none">
   <div class="container-fluid  ">
 
@@ -18,7 +17,6 @@ include('pushBusqueda.php');
         <div class="col ">
           <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck1"  name="db_nombre[]" value="Perfil de Aluminio">
           <label class="form-check-label p-1 bd-highlight"  for="exampleCheck1">Perfil de Aluminio</label>
-
         </div>
 
           <div class="col ">

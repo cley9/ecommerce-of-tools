@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 include("includes/head_.php");
 include("crud.php");

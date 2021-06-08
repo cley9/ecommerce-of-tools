@@ -167,11 +167,15 @@ if (isset($_POST['user_login_'])) {
 	$contador++;
 	}
 		 }
+
 		 if ($contador > 0) {
 		echo "el usuario existe";
 
 			// $response['status']  = 'success';
-			$response['message'] = 'bien venido ...';
+			// $response['message'] = 'bien venido ...';
+			// $_SESSION['help'] = 'bien venido ...';
+
+
 
 		 header('Location: user_admin.php');
 		}

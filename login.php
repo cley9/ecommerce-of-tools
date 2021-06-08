@@ -33,19 +33,19 @@ Swal.fire({
 										</div>
 		<form action="crud.php" method="post">
 			<div class="mb-3">
-				<label for="exampleInputEmail1" class=""> <img src="icons/person-fill.svg" alt=""height="22px">Correo</label>
+				<label for="exampleInputEmail1" class=""> <img src="img/icons/person-fill.svg" alt=""height="22px">Correo</label>
 				<input type="text" class="form-control" id="exampleInputEmail1" name="txtUsu" aria-describedby="emailHelp"  placeholder="Email">
 				</div>
 		  <div class="mb-3">
 
 		    <label for="exampleInputEmail1" class="form-label">
 					Contraseña</label>
-				<img src="icons/eye-fill.svg" alt="" onclick="mostrar()" height="20px">
+				<img src="img/icons/eye-fill.svg" alt="" onclick="mostrar()" height="20px">
 					<input type="password" class="form-control" id="password" name="txtPass"  placeholder="Password" aria-describedby="emailHelp" >
 
 			  <div id="emailHelp" class="form-text">Iniciar cuenta.</div>
 			</div>
-			<button type="submit" name="user_login_" class="btn btn-primary mb-3"> <img src="icons/key.svg" class="" height="40px" alt="">Ingresar</button>
+			<button type="submit" name="user_login_" class="btn btn-primary mb-3"> <img src="img/icons/key.svg" class="" height="40px" alt="">Ingresar</button>
 		</form>
 	</div>
 </div>
